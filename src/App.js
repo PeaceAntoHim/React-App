@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+/* Made Component module use ES6 React component */
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+// import logo from './logo.svg';
+
+/*   <div className="App">
+    <Welcomeh2 children="welcome 1" />
+    <Welcomeh2 children="welcome 2" />
+    <Welcomeh2>Saya Adalah frans</Welcomeh2>
+  </div> */
+  // import { Welcomeh2 } from './Welcome.js';
+  /* <Button>Click Gue</Button> */
+// import './App.css';
+// import Button from './Button';
+
+
+// function App() {
+//   return (
+//     <div className="App">
+//         <img src="/logo512.png" alt="gambar">
+//     </div>  
+//   );
+// }
+
 
 export default App;
