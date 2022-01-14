@@ -1,6 +1,19 @@
-export default function login() {
-    function loginHandler(event) {
 
+import { useNavigate } from 'react-router-dom';
+
+export default function Login() {
+    const navigate = useNavigate();
+
+
+    function loginHandler(event) {
+        event.preventDefault();
+        // console.log('hahahhahah');
+        
+        const checkLogin = true;
+        if(checkLogin) {
+            // redirect
+            navigate('/dashboard');
+        }
     }
 
     return(
