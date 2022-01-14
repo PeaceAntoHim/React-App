@@ -5,6 +5,8 @@ import './App.css';
 import Home from './Home';
 import About from './About';
 import AboutTeam from './AboutTeam';
+import Blog from './Blog';
+import BlogDetail from './BlogDetail';
 
 function App() {
   return (
@@ -14,9 +16,13 @@ function App() {
        <Link to='/about'>About</Link>
      </nav>
       <Routes>
+        
         <Route path="/" element={<Home />}  />
-        <Route path="about" element={<About />}  />
-        <Route path="about/team" element={<AboutTeam/>}  />
+        <Route path="about" element={<About />}>
+          <Route path="team" element={<AboutTeam />}  />
+        </Route>
+        <Route path="/blog" element={<Blog />} />
+        <Route path="blog/artikel-1" element={<BlogDetail />} />
       </Routes>
     </div>  
   );
