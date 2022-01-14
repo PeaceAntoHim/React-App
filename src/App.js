@@ -1,25 +1,26 @@
-/* Made Component module use ES6 React component */
+/* Basic Routing */
+// import to my page
+import { Routes, Route, Link } from 'react-router-dom';
+import './App.css';
+import Home from './Home';
+import About from './About';
+import AboutTeam from './AboutTeam';
 
-// import logo from './logo.svg';
-
-/*   <div className="App">
-    <Welcomeh2 children="welcome 1" />
-    <Welcomeh2 children="welcome 2" />
-    <Welcomeh2>Saya Adalah frans</Welcomeh2>
-  </div> */
-  // import { Welcomeh2 } from './Welcome.js';
-  /* <Button>Click Gue</Button> */
-// import './App.css';
-// import Button from './Button';
-
-
-// function App() {
-//   return (
-//     <div className="App">
-//         <img src="/logo512.png" alt="gambar">
-//     </div>  
-//   );
-// }
+function App() {
+  return (
+    <div className="App">
+     <nav>
+       <Link to='/'>Home</Link>
+       <Link to='/about'>About</Link>
+     </nav>
+      <Routes>
+        <Route path="/" element={<Home />}  />
+        <Route path="about" element={<About />}  />
+        <Route path="about/team" element={<AboutTeam/>}  />
+      </Routes>
+    </div>  
+  );
+}
 
 
 export default App;
